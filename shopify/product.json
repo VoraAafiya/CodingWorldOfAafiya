@@ -1,0 +1,193 @@
+{
+    "product":[
+        {   "id":"01",
+            "img":"img/bag1.jpg",
+            "Name":"Purse",
+            "price":"450/-",
+            "categori":"bag"
+        },
+        {
+            "id":"02",
+            "img":"img/bag2.jpg",
+            "Name":"Purse",
+            "price":"500/-",
+            "categori":"bag"
+        },
+        {
+            "id":"03",
+            "img":"img/bag4.jpg",
+            "Name":"School bag",
+            "price":"1500/-",
+            "categori":"bag"
+        },
+        {
+            "id":"04",
+            "img":"img/bag5.jpg",
+            "Name":"School bag",
+            "price":"1500/-",       
+            "categori":"bag"
+        },
+        {
+            "id":"05",
+            "img":"img/book1.jpg",
+            "Name":"Six Subject Notebook",
+            "price":"130/-",
+            "categori":"notebook"
+        },
+        {
+            "id":"06",
+            "img":"img/book2.jpg",
+            "Name":"Journal",
+            "price":"230/-",
+            "categori":"notebook"
+        },
+        {
+            "id":"07",
+            "img":"img/book1.jpg",
+            "Name":"notebook",
+            "price":"130/-",
+            "categori":"notebook"
+        },
+        {
+            "id":"08",
+            "img":"img/SURROUNDED BY PSYCHOPATHS by Thomas Erikson Hardcover _ Indigo Chapters.jpeg",
+            "Name":"Surrounded by Psychopaths",
+            "price":"130/-",
+            "categori":"book"
+        },
+        {
+            "id":"09",
+            "img":"img/The 48 Laws of Power.jpeg",
+            "Name":"The 48 Laws of Power",
+            "price":"250/-",
+            "categori":"book"
+        },
+        {
+            "id":"10",
+            "img":"img/The Art Of Seduction.jpeg",
+            "Name":"The Art Of Seduction",
+            "price":"250/-",
+            "categori":"book"
+        },
+        {
+            "id":"11",
+            "img":"img/The Laws of Human Nature_ Insights into Behavior.jpeg",
+            "Name":"The Laws of Human Nature",
+            "price":"250/-",
+            "categori":"book"
+        },
+
+        {
+            "id":"12",
+            "img":"img/crocs2.jpg",
+            "Name":"Crocs",
+            "price":"2000/-",
+            "categori":"shoes"
+        },
+        {
+            "id":"13",
+            "img":"img/shoce.jpg",
+            "Name":"Formal",
+            "price":"2500/-",
+            "categori":"shoes"
+        },
+        {
+            "id":"14",
+            "img":"img/ft.jpg",
+            "Name":"thsirt for women",
+            "price":"200/-",
+            "categori":"tshirt"
+        },
+        {
+            "id":"15",
+            "img":"img/ft1.jpg",
+            "Name":"thsirt for women",
+            "price":"500/-",
+            "categori":"tshirt"
+        },
+        {
+            "id":"16",
+            "img":"img/ft2.jpg",
+            "Name":"thsirt for women",
+            "price":"500/-",
+            "categori":"tshirt"
+        },
+        {
+            "id":"17",
+            "img":"img/ft3.jpg",
+            "Name":"thsirt for women",
+            "price":"250/-",
+            "categori":"tshirt"
+        },
+        {
+            "id":"18",
+            "img":"img/ft4.jpg",
+            "Name":"thsirt for women",
+            "price":"1000/-",
+            "categori":"tshirt"
+        },
+        {
+            "id":"19",
+            "img":"img/ft5.jpg",
+            "Name":"thsirt for women",
+            "price":"2000/-",
+            "categori":"tshirt"
+        },
+        {
+            "id":"20",
+            "img":"img/tshirt.jpg",
+            "Name":"thsirt for men",
+            "price":"2500/-",
+            "categori":"tshirt"
+        },
+        {
+            "id":"21",
+            "img":"img/tshirt1.jpg",
+            "Name":"thsirt for men",
+            "price":"500/-",
+            "categori":"tshirt"
+        },
+        {
+            "id":"22",
+            "img":"img/tshirt2.jpg",
+            "Name":"thsirt for men",
+            "price":"200/-",
+            "categori":"tshirt"
+        },
+        {
+            "id":"23",
+            "img":"img/tshirt3.jpg",
+            "Name":"thsirt for men",
+            "price":"250/-",
+            "categori":"tshirt"
+        },
+        {
+            "id":"24",
+            "img":"img/tshirt4.jpg",
+            "Name":"thsirt for men",
+            "price":"2500/-",
+            "categori":"tshirt"
+        },
+        {
+            "id":"25",
+            "img":"img/g1.jpg",
+            "Name":"Guitar",
+            "price":"25000/-",
+            "categori":"guitar"
+        },
+        {
+            "id":"26",
+            "img":"img/g2.jpg",
+            "Name":"Guitar",
+            "price":"5000/-",
+            "categori":"guitar"
+        },
+        {
+            "id":"27",
+            "img":"img/g3.jpg",
+           "Name":"Guitar",
+            "price":"30000/-",
+            "categori":"guitar"
+        }
+    ]
+}

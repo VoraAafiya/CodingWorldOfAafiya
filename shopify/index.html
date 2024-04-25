@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopoify</title>
+    <!--Aafiya's Coding World follow for content (@codelaza_1665)-->
+<!-- <link rel="stylesheet" href="bootstrap.min.css"/>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+<script src="bootstrap.bundle.min.js"></script>
+<script src="jquery-3.7.1.min.js.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+ -->
+ <script src="jquery-3.7.1.min.js.js"></script>
+ <link rel="stylesheet" href="bootstrap.min.css">
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+ 
+ <script>
+    $(document).ready(function () {
+        $.getJSON("product.json", function (data) {
+            $.each(data.product, function (ind, val) {
+                var data =
+                    `<div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="${val.img}" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Name: ${val.Name}</h5>
+                      <p class="card-text">Price: ${val.price}</p>
+                      <a href="detail.html?name=${val.id}" class="btn btn-primary">See More</a>
+                      <button class="btn btn-outline-success">🛒</button>
+
+                    </div>
+                  </div>`
+                $("#data").append(data);
+            });
+        });
+        $("#btnsearch").click(function () {
+            var searche = $("#search").val();
+            $("#data").empty();
+            $.getJSON("product.json", function (data) {
+                var status = false;
+                $.each(data.product, function (idx, val){
+                    if (val.Name == searche || val.categori == searche) {
+                        var item = `
+                        <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="${val.img}" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Name: ${val.Name}</h5>
+                      <p class="card-text">price: ${val.price}</p>
+                      <a href="detail.html?name=${val.id}" class="btn btn-primary">See More</a>
+                    </div>
+                  </div>`
+                  $("#data").append(item);
+                }
+            });
+            });
+        });
+    });
+</script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark" id="navbar">
+        <a class="navbar-brand" href="#"><img style="height:70px;" src="shopify_logo-removebg-preview.png" alt="" class="navbar_logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+          
+        <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+  
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PCs</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#computadores">Computers</a>
+                <a class="dropdown-item" href="#notebooks">Notebooks</a>
+              </div>
+  
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More
+                  </a>
+                  
+  
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#monitores">Monitores</a>
+                    <a class="dropdown-item" href="#teclados">Telephone</a>
+                    <a class="dropdown-item" href="#mouse">Mouses</a>
+                    <a class="dropdown-item" href="#headsets">Headsets</a>
+                  </div>
+                  
+                  <li class="nav-item active">
+                    <a class="nav-link" href="mainlogin_.html">register</a>
+                  </li>
+
+                    <li class="nav-item">
+                      <a class="nav-link" href="#shoppingcart" data-toggle="modal" data-target="#exampleModal">🛒</a>
+                    </li>
+                 </li>
+          </ul>
+  
+          <form class="form-inline my-2 my-lg-0">
+            <input type="text"class="form-control mr-sm-2"  name="search" id="search" placeholder="Search Here">
+            <button class="btn btn-outline-light my-2 my-sm-0" id="btnsearch">Search</button>
+          </form>
+        </div>
+      </nav>
+       <!-- CARROSSEL -->
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="banner_01.png" alt="1 Slide">
+          </div>
+  
+          <div class="carousel-item">
+            <img class="d-block w-100" src="banner_02.png" alt="2 Slide">
+          </div>
+  
+          <div class="carousel-item">
+            <img class="d-block w-100" src="banner_03.png" alt="3 Slide">
+          </div>
+        </div>
+  
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">previous</span>
+        </a>
+  
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <br><br>
+      <h2 class="text-center" id="best-selling">Best Selling</h2>
+      <br><br>
+
+      <div class="container-fluid" id="data">
+      </div>
+</body>
+</html>

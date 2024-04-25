@@ -1,0 +1,32 @@
+#navbar {
+    background-color: #757d55;
+  }
+  .card{
+    margin-top: 50px;
+    margin-left: 50px;
+    width: 200px;
+    height: 300px;
+    border-radius: 8px;
+    background-color: none;
+    display: inline-block;
+    width: 22.5%;
+    padding: 10PX;
+    box-sizing: border-box;
+    text-align: center;
+    vertical-align: top;
+    height: 500px;
+    width: 300px;
+}
+
+  
+.card {
+    margin: 10px;
+    margin-bottom: 15px;
+  }
+p{
+    margin-left: 30px;
+}
+.card img{
+    height: 300px;
+    width: auto;
+}
